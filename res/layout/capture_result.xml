@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="@color/white">
+ 
+	 <RelativeLayout
+        android:id="@+id/title_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="50dip"
+        android:background="@color/title_bg" >
+
+        <TextView
+            style="@style/title_text"
+            android:layout_centerInParent="true"
+            android:text="@string/CaptureResultTitle" />
+        
+        <ImageButton 
+            android:id="@+id/btn_back"
+            style="@style/back_button"
+           	android:layout_alignParentLeft="true" 
+            android:layout_centerVertical="true"  />
+    </RelativeLayout>
+    
+	 
+	 <ImageView android:layout_width="80dip" android:layout_height="80dip"
+	     		android:id="@+id/iv_twodimensionode" android:layout_gravity="center"
+	     		android:layout_margin="20dip"/>
+    
+	 <TextView android:layout_width="fill_parent" android:layout_height="100dip"
+	     	   android:id="@+id/tv_result"
+	     	   android:background="@drawable/edittext_shape"
+	     	   android:layout_margin="10dip" android:padding="10dip"
+	     	   android:gravity="top|left" 
+	     	   android:textSize="16sp" android:textColor="@color/black"/>
+	 
+	 <Button android:layout_width="fill_parent" android:layout_height="40dip"
+	     android:id="@+id/btn_openUrl"
+	     android:background="@drawable/btn_red" android:layout_margin="10dip"
+	     android:text="打开链接" android:textColor="@color/white"
+	     android:textSize="16sp" />
+	 
+</LinearLayout>

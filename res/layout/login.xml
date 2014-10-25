@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:id="@+id/ll_main_login"
+    android:layout_height="fill_parent"
+    android:background="@color/backgroud_color"
+    android:orientation="vertical">
+
+    <include layout="@layout/header" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/scroll_view"
+        android:scrollbars="none">
+
+        <FrameLayout
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="vertical">
+
+                <com.ydh.weile.view.CircleImageView
+                    android:id="@+id/user_avatar"
+                    android:layout_width="90dp"
+                    android:layout_height="90dp"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="30dp"
+                    android:layout_marginTop="35dp"
+                    android:src="@drawable/logi_ico"
+                    android:visibility="visible"
+                    app:border_color="@color/white"
+                    app:border_width="4dp" />
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:id="@+id/linearLayout">
+
+
+                        <EditText
+                            android:id="@+id/editText_username"
+                            android:layout_width="fill_parent"
+                            android:layout_height="45dp"
+                            android:layout_marginBottom="20dp"
+                            android:layout_centerVertical="true"
+                            android:hint="请输入用户名"
+                            android:textColorHint="@color/gray"
+                            android:gravity="left|center_vertical"
+                            android:inputType="text"
+                            android:textColor="@color/black"
+                            android:background="@drawable/edittext_shape"
+                            android:textSize="17sp" />
+
+
+                        <EditText
+                            android:id="@+id/editText_password"
+                            android:layout_width="fill_parent"
+                            android:layout_height="45dp"
+                            android:layout_marginBottom="20dp"
+                            android:textColorHint="@color/gray"
+                            android:gravity="left|center_vertical"
+                            android:layout_centerVertical="true"
+                            android:background="@drawable/edittext_shape"
+                            android:hint="请输入密码"
+                            android:inputType="textPassword"
+                            android:textColor="@color/black"
+                            android:textSize="17sp" />
+
+                        <CheckBox
+                            android:id="@+id/well_known_mark_img"
+                            android:layout_width="wrap_content"
+                            android:layout_height="30dp"
+                            android:button="@drawable/rb_background"
+                            android:textColor="@color/gray"
+                            android:gravity="center_vertical|left"
+                            android:textSize="17sp"
+                            android:checked="false"
+                            android:text="自动登录" />
+
+
+                        <RelativeLayout
+                            android:id="@+id/button_login"
+                            android:layout_width="match_parent"
+                            android:layout_marginTop="40dp"
+                            android:layout_height="45dp"
+                            android:background="@drawable/btn_red">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/white"
+                                android:gravity="center"
+                                android:layout_centerInParent="true"
+                                android:textSize="18sp"
+                                android:text="登   录"
+                                android:id="@+id/login_text" />
+
+                            <ProgressBar
+                                android:id="@+id/btn_progressbar"
+                                android:layout_width="25dp"
+                                android:layout_height="25dp"
+                                style="@style/animStyle"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerVertical="true"
+                                android:layout_marginRight="20dp"
+                                android:visibility="gone" />
+                        </RelativeLayout>
+                    </LinearLayout>
+
+                    <View
+                        android:id="@+id/view"
+                        android:layout_width="match_parent"
+                        android:layout_height="250dp"
+                        android:background="@color/transparent"
+                        android:visibility="gone"/>
+                </RelativeLayout>
+            </LinearLayout>
+
+            <FrameLayout
+                android:id="@+id/fl_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:visibility="gone">
+
+                <com.ydh.weile.view.CircleImageView
+                    android:id="@+id/user_avatar2"
+                    android:layout_width="90dp"
+                    android:layout_height="90dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/default_avatar"
+                    android:visibility="visible"
+                    app:border_color="@color/white"
+                    app:border_width="4dp" />
+
+                <!--<com.ydh.weile.view.ProgressWheel-->
+                <!--android:id="@+id/progressBar"-->
+                <!--android:layout_width="130dp"-->
+                <!--android:layout_height="130dp"-->
+                <!--ProgressWheel:barColor="@color/title_bg"-->
+                <!--ProgressWheel:barLength="50dp"-->
+                <!--ProgressWheel:barWidth="15dp"-->
+                <!--ProgressWheel:circleColor="#00000000"-->
+                <!--ProgressWheel:rimColor="#ffffff"-->
+                <!--ProgressWheel:rimWidth="15dp"-->
+                <!--ProgressWheel:spinSpeed="3dp"-->
+                <!--android:visibility="visible" />-->
+            </FrameLayout>
+        </FrameLayout>
+    </ScrollView>
+</LinearLayout>

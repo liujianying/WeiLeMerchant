@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <include layout="@layout/header" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <RelativeLayout
+            android:padding="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp"
+                    android:orientation="horizontal">
+
+                    <com.ydh.weile.view.CircleImageView
+                        android:id="@+id/img_ico"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/more_ico"
+                        android:visibility="visible"
+                        app:border_color="@color/backgroud_color"
+                        app:border_width="4dp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="80dp"
+                        android:orientation="vertical"
+                        android:layout_marginLeft="10dp">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:text="CU_YY"
+                            android:gravity="center|left"
+                            android:textSize="18sp"
+                            android:textColor="@color/title_color"
+                            android:id="@+id/user_name" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.9"
+                            android:id="@+id/tv_shop_name"
+                            android:gravity="center|left"
+                            android:textSize="18sp"
+                            android:text="福建前进食品有限公司福建前进食品有限公司"
+                            android:textColor="@color/black"
+                            android:layout_gravity="center_horizontal" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPersonName"
+                    android:text="福建省 福州市 仓山区"
+                    android:textSize="18sp"
+                    android:textColor="@color/black"
+                    android:id="@+id/provinces" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPersonName"
+                    android:text="浦上大道 万达写字楼C2座1208室"
+                    android:textColor="@color/gray"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:textSize="18sp"
+                    android:id="@+id/address" />
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/edittext_shape"
+                    android:text=" 帮助中心"
+                    android:textSize="18sp"
+                    android:gravity="center|left"
+                    android:textColor="@color/black"
+                    android:id="@+id/btn_help" />
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_marginTop="15dp"
+                    android:background="@drawable/edittext_shape"
+                    android:text=" 问题反馈"
+                    android:textSize="18sp"
+                    android:gravity="center|left"
+                    android:textColor="@color/black"
+                    android:id="@+id/problem_feedback" />
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_marginTop="15dp"
+                    android:background="@drawable/edittext_shape"
+                    android:textColor="@color/black"
+                    android:text=" 查看更新"
+                    android:textSize="18sp"
+                    android:gravity="center|left"
+                    android:id="@+id/check_update" />
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_marginTop="15dp"
+                    android:background="@drawable/edittext_shape"
+                    android:textColor="@color/black"
+                    android:text=" 关于微乐商户"
+                    android:textSize="18sp"
+                    android:gravity="center|left"
+                    android:id="@+id/about_wlm" />
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_marginTop="30dp"
+                    android:textColor="@color/white"
+                    android:textSize="18sp"
+                    android:text="退出"
+                    android:background="@drawable/btn_red"
+                    android:id="@+id/exit_app" />
+            </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+
+</LinearLayout>

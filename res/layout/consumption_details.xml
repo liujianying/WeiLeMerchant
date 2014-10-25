@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="match_parent">
+
+    <include
+        layout="@layout/header" />
+    <TableLayout
+        android:layout_below="@+id/title_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp"
+        android:shrinkColumns="1" >
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="请输入会员本次消费信息" android:paddingBottom="5dp" android:paddingTop="5dp" android:textColor="@color/title_color" android:textSize="20sp"
+            android:id="@+id/card_title" />
+
+        <TableRow android:paddingTop="5dp" android:paddingBottom="5dp"
+            android:id="@+id/row0">
+            <TextView android:layout_width="80dp" android:text="会员昵称" style="@style/text_cotent_style"
+                android:id="@+id/tv_row0_0" />
+            <TextView   style="@style/text_cotent_style" android:text="张（188****5680）" android:id="@+id/tv_row0_1" />
+        </TableRow>
+        <TableRow android:paddingTop="5dp" android:paddingBottom="5dp" android:shrinkColumns=""
+            android:id="@+id/row1">
+            <TextView android:layout_width="120dp"  android:text="优惠券名称"  style="@style/text_cotent_style"
+                android:id="@+id/tv_row1_0" />
+            <TextView   style="@style/text_cotent_style" android:text="牛肉优惠券150减20计算机空间啊；手机阿里分；爱疯" android:id="@+id/tv_row1_1" />
+        </TableRow>
+        <TableRow android:paddingTop="5dp" android:paddingBottom="5dp" android:shrinkColumns=""
+            android:id="@+id/row2">
+            <TextView android:layout_width="60dp" android:text="储值卡类型"  style="@style/text_cotent_style" android:id="@+id/tv_row2_0" />
+            <TextView  android:text="周期卡"  style="@style/text_cotent_style" android:id="@+id/tv_row2_1" />
+        </TableRow>
+        <TableRow android:paddingTop="5dp" android:paddingBottom="5dp" android:shrinkColumns=""
+            android:id="@+id/row3">
+            <TextView android:layout_width="60dp" android:text="储值卡编号"  style="@style/text_cotent_style" android:id="@+id/tv_row3_0" />
+            <TextView  android:text="NO.15534545643"  style="@style/text_cotent_style" android:id="@+id/tv_row3_1" />
+        </TableRow>
+        <TableRow android:paddingTop="5dp" android:paddingBottom="5dp" android:shrinkColumns=""
+            android:id="@+id/row4">
+            <TextView android:layout_width="80dp" android:text="消费次数" android:layout_gravity="center_vertical|left" android:gravity="center_vertical" style="@style/text_cotent_style" android:id="@+id/tv_row4_0" />
+            <EditText android:layout_width="80dp" android:layout_gravity="center_vertical" android:layout_height="30dp" android:background="@drawable/edittext_shape" android:inputType="phone"
+                android:id="@+id/tv_row4_1" />
+
+            <TextView style="@style/text_cotent_style" android:text=" 次" android:layout_gravity="center_vertical"
+                android:id="@+id/tv_row4_2" />
+        </TableRow>
+        <TableRow android:paddingTop="5dp" android:paddingBottom="5dp"
+            android:id="@+id/row5">
+            <TextView android:layout_width="80dp" android:text="有效期至"  style="@style/text_cotent_style"
+                android:id="@+id/tv_row5_0" />
+            <TextView   style="@style/text_cotent_style" android:text="2015-12-12" android:textColor="@color/black"
+                android:id="@+id/tv_row5_1" />
+        </TableRow>
+        <TableRow android:paddingTop="5dp" android:paddingBottom="5dp" android:shrinkColumns=""
+            android:id="@+id/row6">
+            <TextView android:layout_width="80dp" android:layout_gravity="center_vertical" android:text="赠送积分"  style="@style/text_cotent_style" android:id="@+id/tv_row6_0" />
+            <EditText android:layout_width="80dp" android:layout_height="30dp" android:background="@drawable/edittext_shape"
+                android:id="@+id/tv_row6_1" />
+
+            <TextView   style="@style/text_cotent_style" android:layout_gravity="center_vertical" android:text=" 分" android:textColor="@color/black" android:inputType="phone"
+                android:id="@+id/tv_row6_2" />
+        </TableRow>
+        <TableRow android:paddingTop="5dp" android:paddingBottom="5dp"
+            android:id="@+id/row7">
+            <TextView android:layout_width="80dp" android:text="交易流水号"  style="@style/text_cotent_style"
+                android:id="@+id/tv_row7_0" />
+            <TextView android:text="4534545345"  style="@style/text_cotent_style" android:id="@+id/tv_row7_1" />
+        </TableRow>
+    </TableLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="30dp"
+        android:layout_alignParentBottom="true">
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:gravity="center"
+            android:text="取消交易"
+            android:background="@drawable/btn_gray"
+            android:id="@+id/ancel_deal" />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_height="45dp"
+            android:layout_weight="1"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:text="确认交易"
+            android:gravity="center"
+            android:background="@drawable/btn_red"
+            android:id="@+id/confirmation" />
+
+        </LinearLayout>
+
+
+ <include  layout="@layout/order_empty_view"   />
+
+
+</RelativeLayout>

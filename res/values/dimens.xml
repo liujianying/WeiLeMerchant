@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- 系统默认的统一尺寸 -->
+    <!--<dimen name="app_default_paddingLeft">5dip</dimen>-->
+    <!--<dimen name="app_default_paddingRight">5dip</dimen>-->
+    <!--<dimen name="textSizeContentSmall">11.0sp</dimen>-->
+    <!--<dimen name="search_icon_size">18.599976dip</dimen>-->
+    <!--<dimen name="boss_unipay_1px">1px</dimen>-->
+
+
+    <!--<dimen name="calendar_day_headers_paddingbottom">4dp</dimen>-->
+    <!--<dimen name="calendar_month_topmargin">16dp</dimen>-->
+    <!--<dimen name="calendar_month_title_bottommargin">4dp</dimen>-->
+    <!--<dimen name="calendar_text_medium">18dip</dimen>-->
+    <!--<dimen name="calendar_text_small">14sp</dimen>-->
+
+
+    <!-- dialog 边缘圆角    -->
+    <dimen name="ounded_corners_to_px">10px</dimen>
+    <!-- button 统一高度设定 -->
+    <dimen name="btn_height">45dp</dimen>
+    <!-- button text size -->
+    <dimen name="btn_text_size">18sp</dimen>
+
+    <dimen name="boss_unipay_1px">1px</dimen>
+</resources>

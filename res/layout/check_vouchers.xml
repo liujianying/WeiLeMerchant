@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent" android:background="@color/white"
+    android:layout_height="match_parent">
+    <include layout="@layout/header" />
+
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="40dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/edittext_shape">
+        <EditText
+            android:id="@+id/commplaints_phone"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toLeftOf="@+id/delete_ico"
+            android:layout_centerVertical="true"
+            android:background="@null"
+            android:hint="请输入优惠券或代金券8位数编码"
+            android:inputType="phone"
+            android:singleLine="true"
+            android:textSize="16sp"/>
+        <ImageView android:id="@+id/delete_ico" android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:src="@drawable/icon_delete_num"
+            android:layout_centerVertical="true" android:layout_alignParentRight="true"/>
+    </RelativeLayout>
+</LinearLayout>

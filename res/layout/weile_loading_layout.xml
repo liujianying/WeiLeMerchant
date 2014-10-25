@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+ <FrameLayout  
+  xmlns:android="http://schemas.android.com/apk/res/android"  
+  android:layout_width="wrap_content"  
+  android:layout_height="wrap_content"  >  
+  
+     
+     <LinearLayout android:id="@+id/ll_responseLayout"
+        android:layout_width="wrap_content"
+       	android:layout_height="wrap_content"
+       	android:gravity="center_horizontal"
+       	android:visibility="gone"
+       	android:orientation="vertical"
+       	android:layout_gravity="center">
+	    
+       <ImageView android:id="@+id/iv_response"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:src="@drawable/pic_lele"
+	        android:layout_gravity="center"/>
+       
+       <TextView android:id="@+id/tv_response"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:textColor="@color/gray"
+	        android:text="网络异常，请重试!"
+	        android:textSize="15sp"
+	        android:layout_marginTop="10dip"
+	        android:layout_gravity="center"/>
+       
+   </LinearLayout>
+  
+   <RelativeLayout android:id="@+id/rl_loadLayout"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:visibility="visible"
+       android:layout_gravity="center">
+	    <ProgressBar   
+	        android:id="@+id/pb_loading"  
+	        style="@style/weile_loading_dialog_style"
+	        android:layout_centerHorizontal="true"
+	        android:layout_width="70dip" 
+	        android:layout_height="130dip"/>  
+	        
+	    <TextView android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="正在努力加载..."
+	        android:id="@+id/loading_text"
+	        android:lineSpacingExtra="3dip"
+	        android:layout_marginTop="10dip"
+	        android:layout_below="@id/pb_loading"
+	        android:textColor="@color/gray"
+	        android:textSize="15sp"/>
+    </RelativeLayout>
+    
+    <LinearLayout android:id="@+id/ll_loginLayout"
+        android:layout_width="wrap_content"
+       	android:layout_height="wrap_content"
+       	android:gravity="center_horizontal"
+       	android:visibility="gone"
+       	android:orientation="vertical"
+       	android:layout_gravity="center">
+	    
+       <ImageView android:id="@+id/iv_login"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:src="@drawable/face_girl_notice"
+	        android:layout_gravity="center"/>
+       
+       <Button 
+           android:id="@+id/btn_login"
+           android:layout_width="200dip"
+           android:layout_height="40dip"
+           android:text="去登录"
+           android:textColor="@color/white"
+           android:textSize="16sp"
+           android:background="@drawable/btn_red"
+           android:layout_marginTop="15dip"/>
+       
+       <TextView 
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:textColor="@color/gray"
+	        android:text="您尚未登录, 无法显示个人消息 !"
+	        android:textSize="12sp"
+	        android:layout_marginTop="10dip"
+	        android:layout_gravity="center"/>
+       
+   </LinearLayout>
+   
+    
+   
+    
+</FrameLayout>  

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:background="#e4e5e0">
+    <include layout="@layout/header" />
+    <ScrollView
+        android:id="@+id/scroll_all"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none"
+        android:fillViewport="true" >
+        <LinearLayout
+            android:id="@+id/layout_inner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:orientation="vertical">
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"  android:orientation="vertical" android:background="@color/backgroud_color" android:paddingBottom="5dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:padding="10dp" android:orientation="vertical">
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="福州前进食品有限公司" android:textSize="18sp" android:id="@+id/shop_name" android:textColor="@color/black" />
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:textSize="14sp" android:paddingTop="5dp" android:text="操作员：张三" android:textColor="@color/gray" android:id="@+id/employees_name" />
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal">
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingTop="5dp" android:text="@string/home_page_total_money" android:textSize="20sp" android:id="@+id/today_total_money" android:textColor="@color/black" />
+            <TextView android:layout_width="wrap_content" android:layout_marginLeft="5dp" android:layout_height="wrap_content" android:text="(10笔)" android:id="@+id/total_number"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <View android:layout_marginTop="15dp"
+            android:layout_width="match_parent" android:layout_height="10dp" android:background="@drawable/dotted_line_gray"
+            android:id="@+id/line" />
+        </LinearLayout>
+
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" >
+            <LinearLayout
+                android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1" android:orientation="vertical">
+                <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:gravity="center" android:textColor="@color/black" android:text="优惠券" android:textSize="14sp" />
+                <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:gravity="center" android:textColor="@color/black" android:text="10" android:id="@+id/coupons"
+                    android:textSize="14sp" />
+            </LinearLayout>
+            <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1" android:orientation="vertical">
+                <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:gravity="center" android:textColor="@color/black" android:text="代金券"
+                    android:textSize="14sp" />
+                <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:gravity="center" android:textColor="@color/black" android:text="10" android:id="@+id/vouchers"
+                    android:textSize="14sp" />
+            </LinearLayout>
+            <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1" android:orientation="vertical">
+                <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:gravity="center" android:textColor="@color/black" android:text="会员卡"
+                    android:textSize="14sp" />
+                <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:gravity="center" android:textColor="@color/black" android:text="10" android:id="@+id/membership_card"
+                    android:textSize="14sp" />
+            </LinearLayout>
+            <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1" android:orientation="vertical">
+                <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:gravity="center" android:textColor="@color/black" android:text="储值卡"
+                    android:textSize="14sp" />
+                <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:gravity="center" android:textColor="@color/black" android:text="10" android:id="@+id/cards"
+                    android:textSize="14sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+    <View android:layout_width="match_parent" android:layout_height="1dp" android:background="#a8a8a8"/>
+
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"  android:padding="10dp" android:orientation="vertical" android:background="#e4e5e0">
+        <LinearLayout android:layout_width="match_parent" android:layout_height="100dp" android:layout_marginBottom="20dp" android:orientation="horizontal"
+            android:id="@+id/ll_num1">
+            <Button android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginRight="5dp" android:layout_weight="1" android:text="扫一扫" android:id="@+id/button1" android:background="@color/blue"
+                android:textColor="@color/white" android:textSize="20dp" android:layout_gravity="center_horizontal" />
+            <Button android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="5dp" android:layout_weight="1" android:background="#d57acc"  android:textColor="@color/white"
+                android:textSize="20dp" android:text="消息中心" android:id="@+id/button2" />
+            </LinearLayout>
+
+        <LinearLayout android:layout_width="match_parent" android:layout_height="100dp" android:layout_marginBottom="10dp" android:orientation="horizontal"
+            android:id="@+id/ll_num2">
+            <Button android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginRight="5dp" android:layout_weight="1"
+                android:text="验乐商券" android:background="#79d932" android:textColor="@color/white" android:textSize="20dp" android:layout_gravity="center_horizontal"
+                android:id="@+id/button3" />
+            <Button android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="5dp" android:layout_weight="1" android:background="#fa6647"
+                android:textColor="@color/white" android:textSize="20dp" android:text="交易记录"
+                android:id="@+id/button4" />
+        </LinearLayout>
+        <LinearLayout android:layout_width="match_parent" android:layout_height="100dp" android:orientation="horizontal"
+            android:id="@+id/ll_num3">
+            <Button android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginRight="5dp" android:layout_weight="1"
+                android:text="更多" android:background="#fbb644" android:textColor="@color/white" android:textSize="20dp" android:layout_gravity="center_horizontal"
+                android:id="@+id/button5" />
+            <View android:layout_width="match_parent"  android:layout_height="match_parent" android:padding="5dp" android:paddingLeft="5dp" android:layout_weight="1" android:text="New Button" android:visibility="invisible"/>
+        </LinearLayout>
+        </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/boss_unipay_wrapper" >
+
+    <LinearLayout style="@style/boss_unipay_linear.tipframe" >
+
+        <LinearLayout style="@style/boss_unipay_linear" >
+
+            <LinearLayout
+                style="@style/boss_unipay_alert_title"
+                android:orientation="vertical"
+                android:paddingBottom="28.0dip"
+                android:paddingTop="28.0dip" >
+
+                <TextView 
+                    android:id="@+id/tv_title"
+                    style="@style/boss_unipay_tx"
+                    android:gravity="center"
+                    android:singleLine="false" />
+
+                <TextView
+                    android:id="@+id/tv_title_cotent"
+                    style="@style/boss_unipay_tx"
+                    android:gravity="center"
+                    android:singleLine="false"
+                    android:textSize="13.0sp"
+                    android:layout_marginTop="5.0dip" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <View style="@style/boss_unipay_line" />
+
+        <LinearLayout style="@style/boss_unipay_bar" >
+
+            <Button
+                android:id="@+id/cancel"
+                style="@style/boss_unipay_btn.noborder"
+                android:layout_weight="1.0"
+                android:background="@drawable/ui_alert_left_button"
+                android:text="取消"
+                android:textColor="@color/title_color" />
+
+            <View style="@style/boss_unipay_partline" />
+
+            <Button
+                android:id="@+id/confirmation"
+                style="@style/boss_unipay_btn.noborder"
+                android:layout_weight="1.0"
+                android:background="@drawable/ui_alert_right_button"
+                android:text="确认"
+                android:textColor="@color/title_color" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

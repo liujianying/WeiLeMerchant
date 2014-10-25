@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="280dp"
+    android:layout_height="wrap_content"
+    android:background="@drawable/ui_alert_bg"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/dialog_button_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="10dp"
+        android:paddingLeft="15dp"
+        android:paddingTop="10dp"
+        android:text="版本更新 "
+        android:textColor="@color/black"
+        android:textSize="20sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="2dp"
+        android:layout_marginRight="2dp"
+        android:background="@color/title_color" />
+
+    <ScrollView
+        android:id="@+id/sv_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="50dp"
+        android:paddingBottom="15dp"
+        android:paddingLeft="15dip"
+        android:paddingRight="15dp"
+        android:paddingTop="10dp" >
+
+        <TextView
+            android:id="@+id/dialog_button_context"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minHeight="50dp"
+            android:scrollbarFadeDuration="2000"
+            android:scrollbarStyle="outsideOverlay"
+            android:scrollbars="vertical"
+            android:textColor="@color/gray"
+            android:textSize="15sp" />
+    </ScrollView>
+
+    <View style="@style/boss_unipay_line" />
+
+    <LinearLayout android:id="@+id/ll_update_action" style="@style/boss_unipay_bar" >
+
+        <Button
+            android:id="@+id/cancel"
+            style="@style/boss_unipay_btn.noborder"
+            android:layout_weight="1.0"
+            android:background="@drawable/ui_alert_left_button"
+            android:text="暂时不想更新"
+            android:textColor="@color/title_color" />
+
+        <View style="@style/boss_unipay_partline" />
+
+        <Button
+            android:id="@+id/confirmation"
+            style="@style/boss_unipay_btn.noborder"
+            android:layout_weight="1.0"
+            android:background="@drawable/ui_alert_right_button"
+            android:text="立即更新"
+            android:textColor="@color/title_color" />
+    </LinearLayout>
+
+</LinearLayout>

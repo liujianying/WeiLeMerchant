@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+
+    <color name="transparent">#00000000</color>
+
+    <color name="black">#FF000000</color>
+    <color name="red">#FFFF0000</color>
+    <color name="green">#FF00FF00</color>
+    <color name="blue">#FF3399FF</color>
+    <color name="yellow">#FFFFFF00</color>
+    <color name="magenta">#FFFF00FF</color>
+    <color name="orange">#ffff6600</color>
+    <color name="gray">#ff666666</color>
+    <color name="low_gray">#ffcccccc</color>
+    <color name="lightgray">#ff999999</color>
+    <color name="white">#ffffffff</color>
+    <color name="white_gray">#ffeeeeee</color>
+    <color name="red_text">#D20000</color>
+    <color name="pink">#FF7BA9</color>
+    <color name="orchid">#DA70D6</color>
+    <color name="btn_bg">#DEDABD</color>
+    <color name="transparent_background">#00ffffff</color>
+    <!-- 特产 -->
+    <color name="popu_bg">#60000000</color>
+    <color name="title_color_trans">#50DD5441</color>
+    <color name="title_color">#DD5441</color>
+    <color name="city_normal__background">#00000000</color>
+    <color name="city_pressedl__background">#80000000</color>
+    <color name="screening_clor">#FFFFFF</color>
+    <color name="specialty_background">#EEEEEE</color>
+    <color name="normal__background">#FFFFFF</color>
+    <color name="pressed_background">#EBEBEB</color>
+    <color name="price_color">#DD5441</color>
+    <color name="special_select_text">#FFDD5441</color>
+    <color name="special_backgroud">#FFEEEEEE</color>
+    <color name="special_line_color">#FFCCCCCC</color>
+    <color name="special_text_color">#FFDD5441</color>
+    <color name="item_bg_normal">#FFFFFFFF</color>
+    <color name="item_bg_pressed">#FFF2F2F2</color>
+    <color name="gray_backgroup">#ff626262</color>
+    <!-- 特产详情 -->
+    <color name="wl_color">#FFDD5441</color>
+    <color name="red_cartnum_back">#ffdf0649 </color>
+    <!-- city list color -->
+    <color name="setting_line_color">#ffcccccc</color>
+    <color name="setting_bg_p">#fff5f5f5</color>
+    <color name="edit_text_bg">#ffE0E0E0</color>
+    <color name="city_group_bg">#fff6f6f4</color>
+    <color name="core_pink">#fff15b7f</color>
+    <color name="core_white">#ffffffff</color>
+    <color name="text_font_black">#ff444444</color>
+    <color name="setting_group_bg">#ffe4e4e4</color>
+    <color name="item_color_normal">#FFFFFFFF</color>
+    <color name="item_color_pressed">#FFF9C6B7</color>
+    <color name="gridview_bg">#5E5A5A</color>
+    <color name="title_bg">#DD5441</color>
+    <color name="pay_text_grey_color">#ff848484</color>
+    <!-- 确认订单页面 -->
+    <color name="total_color">#DD5441</color>
+    <color name="backgroud_color">#FFEEEEEE</color>
+
+    <!-- 首页菜单 -->
+    <color name="home_menu_bg">#DEDEDE</color>
+    <color name="divie_line_bg">#dddddd</color>
+    <color name="divie_line_add_bg">#ffd0d0d0</color>
+    <!-- 支付宝 -->
+    <color name="dialog_tiltle_blue">#2277BB</color>
+    <color name="text_red">#DD5643</color>
+    <color name="btn_red_normal">#DD5441</color>
+    <color name="btn_red_pressed">#cc422e</color>
+
+    <color name="btn_gray_normal">#959595</color>
+    <color name="btn_gray_pressed">#696969</color>
+    <!-- 雪白色 -->
+    <color name="floralwhite">#FFFAF0</color>
+    <color name="dimgrey">#696969</color>
+    <!-- 退款 -->
+    <color name="help_ico_bg">#CDCCCC</color>
+    <!-- 对话框背景 -->
+    <color name="common_dialog_normal">#F0F0F0</color>
+    <color name="dialog_bg">#ffffffff</color>
+    <color name="dialog_bg_please">#ffe8e8e8</color>
+    <!-- 我的关注 -->
+    <color name="myFocusOn_normal">#DFDFDF</color>
+    <color name="myFocusOn_press">#D1D1D1</color>
+
+
+    <color name="viewfinder_frame">#db5546</color>
+    <color name="viewfinder_laser">#ffff0000</color>
+    <color name="viewfinder_mask">#60000000</color>
+    <color name="result_view">#b0000000</color>
+    <color name="possible_result_points">#c0ffff00</color>
+
+
+    <!-- uidialog -->
+
+    <color name="boss_unipay_dialog">#00ffffff</color>
+    <color name="boss_unipay_c_tx">#ff000000</color>
+    <color name="boss_unipay_c_thin">#ffa6a6a6</color>
+    <color name="boss_unipay_c_thin0">#ffc8c7cc</color>
+    <color name="boss_unipay_c_thin1">#ff808080</color>
+    <color name="boss_unipay_c_thin2">#ffb2b2b2</color>
+    <color name="boss_unipay_c_thin3">#ff333333</color>
+    <color name="boss_unipay_c_thin4">#ffc8c8c8</color>
+    <color name="boss_unipay_c_white">#ffffffff</color>
+    <color name="boss_unipay_c_em">#ffff6600</color>
+    <color name="boss_unipay_c_em1">#ffff3b30</color>
+    <color name="boss_unipay_c_suc">#ff43c959</color>
+    <color name="boss_unipay_c_blue">#ff007aff</color>
+    <color name="boss_unipay_c_bluedeep">#ff0079ff</color>
+    <color name="boss_unipay_c_bluelight">#ff99caff</color>
+    <color name="boss_unipay_c_trans">#90000000</color>
+
+    <color name="alert_bg">#F1F1F1</color>
+    <color name="alert_bg_normal">#00ffffff</color>
+    <color name="alert_bg_please">#22000000</color>
+
+
+</resources>

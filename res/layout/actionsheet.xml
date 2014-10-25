@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/transparent"
+    android:orientation="vertical"
+    android:padding="5dp">
+
+    <TextView
+        android:id="@+id/frist_cotent"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/btn_height"
+        android:background="@drawable/rounded_corners_left_right_top"
+        android:gravity="center"
+        android:textColor="@color/title_color"
+        android:textSize="@dimen/btn_text_size" />
+
+    <View style="@style/line_style" />
+
+    <TextView
+        android:id="@+id/last_content"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/btn_height"
+        android:background="@drawable/rounded_corners_left_right_button"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:textSize="@dimen/btn_text_size" />
+
+    <TextView
+        android:id="@+id/cancel"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/btn_height"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/rounded_bg"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:textSize="@dimen/btn_text_size" />
+
+</LinearLayout>

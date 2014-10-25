@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    
+
+	 <com.ydh.weile.view.MyScrollView
+        android:id="@+id/scroll_all"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+	
+	        <LinearLayout
+	            android:id="@+id/layout_inner"
+	            android:layout_width="fill_parent"
+	            android:layout_height="fill_parent"
+	            android:orientation="vertical" >
+	
+	            <com.ydh.weile.view.MyListView
+	               android:id="@+id/list"
+				    android:layout_width="fill_parent"
+				    android:layout_height="fill_parent"
+				    android:background="@color/backgroud_color"
+				    android:divider="@null"
+				    android:listSelector="#00000000"
+			        android:cacheColorHint="#00000000" />
+	            
+	        </LinearLayout>
+       </com.ydh.weile.view.MyScrollView>
+       
+	 <include
+        android:id="@+id/view_nodata"
+        layout="@layout/messagebox_nodata"
+        android:visibility="gone" />     
+         
+    <com.ydh.weile.view.LoadDataView
+        android:id="@+id/loadView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+	
+</FrameLayout>
